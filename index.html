@@ -83,8 +83,27 @@ nav.scrolled {
 }
 
 .nav-logo {
-  height: 48px;
+  height: 40px;
   opacity: 0.95;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.nav-brand-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--white);
+  transition: color 0.4s ease;
+}
+
+nav.scrolled .nav-brand-text {
+  color: var(--carbon);
 }
 
 .nav-links {
@@ -696,8 +715,9 @@ footer p {
 
 <!-- Navigation -->
 <nav id="nav">
-  <a href="#">
+  <a href="#" class="nav-brand">
     <img src="img/logo.png" alt="INNOVALTIA" class="nav-logo">
+    <span class="nav-brand-text">INNOVALTIA</span>
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#filosofia">Filosofía</a></li>
