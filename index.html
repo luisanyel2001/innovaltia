@@ -85,10 +85,6 @@ nav.scrolled {
 .nav-logo {
   height: 40px;
   width: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  image-rendering: auto;
 }
 
 .nav-brand {
@@ -199,10 +195,6 @@ nav.scrolled .menu-toggle span { background: var(--carbon); }
 .hero-logo {
   height: 140px;
   width: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  image-rendering: auto;
   margin-bottom: 2.5rem;
   opacity: 0;
   transform: translateY(20px);
@@ -726,7 +718,10 @@ footer p {
 <!-- Navigation -->
 <nav id="nav">
   <a href="#" class="nav-brand">
-    <img src="img/logo-sinfondo.jpg" alt="INNOVALTIA" class="nav-logo">
+    <svg class="nav-logo" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="47" fill="#F2EEE7"/>
+      <text x="50" y="58" text-anchor="middle" font-family="'Playfair Display', serif" font-size="32" fill="#6A5645" font-weight="400" letter-spacing="1">IA</text>
+    </svg>
     <span class="nav-brand-text">INNOVALTIA</span>
   </a>
   <ul class="nav-links" id="navLinks">
@@ -748,7 +743,10 @@ footer p {
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <img src="img/logo-sinfondo.jpg" alt="INNOVALTIA" class="hero-logo">
+    <svg class="hero-logo" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="47" fill="#F2EEE7"/>
+      <text x="50" y="58" text-anchor="middle" font-family="'Playfair Display', serif" font-size="32" fill="#6A5645" font-weight="400" letter-spacing="1">IA</text>
+    </svg>
     <h1>Toda gran arquitectura comienza entendiendo a quien la habitará.</h1>
     <p class="hero-sub">No vendemos planos. No vendemos metros cuadrados. Diseñamos experiencias que permanecen en el tiempo.</p>
     <a href="#metodo" class="hero-cta">Conoce el Método HABITAR™</a>
